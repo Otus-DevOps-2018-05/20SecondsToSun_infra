@@ -1,6 +1,15 @@
 # 20SecondsToSun_infra
 20SecondsToSun Infra repository
 
+# Homework 04
+
+### IP Addresses
+
+testapp_IP = 35.195.231.194
+testapp_port = 9292
+
+# Homework 03
+
 ### Connect with one command
 
 ```bash
