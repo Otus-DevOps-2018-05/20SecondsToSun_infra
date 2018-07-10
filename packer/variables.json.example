@@ -1,0 +1,5 @@
+{
+    "project_id": "infra-131313",
+    "source_image_family": "ubuntu-xxxx-xxx",
+    "machine_type": "xx-micro"
+  }
