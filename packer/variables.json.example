@@ -4,9 +4,8 @@
     "machine_type": "xx-micro",
     "disk_size": "10",
     "disk_type": "pd-standard",
-    "tags":["puma-server"],
+    "tags":"xxx-server",
     "network": "default",
     "image_description":"Ubuntu, ruby and mongodb default installed",
-    "service_name":"reddit-app"
+    "service_name":"xxx-app"
   }
-  
