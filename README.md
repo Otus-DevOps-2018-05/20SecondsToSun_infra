@@ -12,15 +12,15 @@
 - network
 - image_description
 
-Запуск
+Команда создания образа
 ```bash
 packer validate -var-file=variables.json ubuntu16.json
 packer build -var-file=variables.json ubuntu16.json
 ```
 ### Immutable infrastructure
-Создан шаблон immutable.json<br/>
+Создан шаблон *immutable.json*<br/>
 Добавлен скирпт деплоя приложения<br/>
-Добавлен reddit-app.service в systemd образа VM
+Добавлен *reddit-app.service* в *systemd* образа VM
 
 ### Gcloud script
 ```bash
