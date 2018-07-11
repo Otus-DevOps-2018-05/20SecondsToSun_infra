@@ -1,4 +1,6 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2018-05/20SecondsToSun_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2018-05/20SecondsToSun_infra)
 # 20SecondsToSun_infra
+
 20SecondsToSun Infra repository
 
 # Homework 05
