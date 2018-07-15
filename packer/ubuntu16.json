@@ -1,4 +1,15 @@
 {
+    "variables": {
+        "project_id": "",
+        "source_image_family": "",
+        "machine_type": "",
+        "disk_size": "",
+        "disk_type": "",
+        "tags": "",
+        "network": "",
+        "image_description": "",
+        "service_name": ""
+    },
     "builders": [
         {
             "type": "googlecompute",
@@ -11,9 +22,9 @@
             "machine_type": "{{user `machine_type`}}",
             "disk_size": "{{user `disk_size`}}",
             "disk_type": "{{user `disk_type`}}",
-            "tags":"{{user `tags`}}",
+            "tags": "{{user `tags`}}",
             "network": "{{user `network`}}",
-            "image_description":"{{user `image_description`}}"
+            "image_description": "{{user `image_description`}}"
         }
     ],
     "provisioners": [
