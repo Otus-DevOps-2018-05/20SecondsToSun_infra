@@ -1,0 +1,5 @@
+ project = "infra-000000"
+ region = "europe-west1"
+ public_key_path = "c:/.ssh/20secondstosun.pub"
+ disk_image = "reddit-full"
+ zone = "europe-west1-b"
