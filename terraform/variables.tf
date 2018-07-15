@@ -3,7 +3,18 @@ variable project {
 }
 
 variable user {
-  description = "appuser"
+  description = "main user"
+  default     = "appuser"
+}
+
+variable user1 {
+  description = "user 1"
+  default     = "appuser1"
+}
+
+variable user2 {
+  description = "user 2"
+  default     = "appuser2"
 }
 
 variable region {
@@ -25,4 +36,12 @@ variable disk_image {
 
 variable "zone" {
   default = "europe-west1-b"
+}
+
+variable "count" {
+  default = "1"
+}
+
+variable "port" {
+  default = "9292"
 }
