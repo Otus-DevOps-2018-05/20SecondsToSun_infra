@@ -11,6 +11,10 @@ variable public_key_path {
   description = "public SSH key path"
 }
 
+variable private_key_path {
+  description = "private SSH key path"
+}
+
 variable "zone" {
   default = "europe-west1-b"
 }
