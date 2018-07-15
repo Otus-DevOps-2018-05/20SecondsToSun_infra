@@ -11,7 +11,7 @@ resource "google_compute_instance" "app" {
   tags         = ["reddit-app"]
 
   metadata {
-    ssh-keys = "appuser:${file(var.public_key_path)}"
+    ssh-keys = "20secondstosun:${file(var.public_key_path)}"
   }
 
   # определение загрузочного диска
