@@ -11,7 +11,7 @@ resource "google_compute_instance" "app" {
   tags         = ["reddit-app"]
 
   metadata {
-    ssh-keys = "20secondstosun:${file(var.public_key_path)}"
+    ssh-keys = "${var.user}:${file(var.public_key_path)}"
   }
 
   # определение загрузочного диска
@@ -32,9 +32,9 @@ resource "google_compute_instance" "app" {
 
   connection {
     type        = "ssh"
-    user        = "20secondstosun"
+    user        = "${var.user}"
     agent       = false
-    private_key = "${file("c:/.ssh/20secondstosun")}"
+    private_key = "${file(var.private_key_path)}"
   }
 
   provisioner "file" {
