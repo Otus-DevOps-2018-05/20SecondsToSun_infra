@@ -11,10 +11,6 @@ resource "google_compute_instance" "app" {
   tags         = ["reddit-app"]
   count        = "${var.count}"
 
-  metadata {
-    ssh-keys = "${var.user}:${file(var.public_key_path)}${var.user1}:${file(var.public_key_path)}${var.user2}:${file(var.public_key_path)}"
-  }
-
   boot_disk {
     initialize_params {
       image = "${var.disk_image}"
@@ -54,4 +50,10 @@ resource "google_compute_firewall" "firewall_puma" {
 
   source_ranges = ["0.0.0.0/0"]
   target_tags   = ["reddit-app"]
+}
+
+resource "google_compute_project_metadata" "infra-metadata" {
+  metadata {
+    ssh-keys = "${var.user}:${file(var.public_key_path)}"
+  }
 }
