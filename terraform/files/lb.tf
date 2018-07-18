@@ -45,7 +45,7 @@ resource "google_compute_health_check" "app" {
   timeout_sec        = 1
 
   http_health_check {
-    port         = "${var.port}"
+    port = "${var.port}"
   }
 }
 
