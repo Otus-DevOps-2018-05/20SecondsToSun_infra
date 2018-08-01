@@ -3,6 +3,18 @@
 
 20SecondsToSun Infra repository
 
+# Homework 08
+### Основная часть
+- Установлен ansible
+- Протестированы различные способы подключения и команды
+- Создан playbook для скачивания reddit app из репозитория
+- Скрипт удаляет локальный репозиторий
+
+```bash
+ansible app -m command -a 'rm -rf ~/reddit'
+```
+- ansible-playbook clone.yml склонирует репозиторий, так как он был удален
+
 # Homework 07
 ### Основная часть
 - Конфигурация разбита по файлам

@@ -7,16 +7,6 @@ variable user {
   default     = "appuser"
 }
 
-variable user1 {
-  description = "user 1"
-  default     = "appuser1"
-}
-
-variable user2 {
-  description = "user 2"
-  default     = "appuser2"
-}
-
 variable region {
   description = "Region"
   default     = "europe-west1"
@@ -32,6 +22,7 @@ variable private_key_path {
 
 variable disk_image {
   description = "Disk image"
+  default = "reddit-app"
 }
 
 variable "zone" {
